@@ -1,19 +1,34 @@
-# Ejemplo: adivina el número
+# ----------------------------------------------------------------------------
+# PYTHON 3 - APUNTES Y EJEMPLOS
+# Ejemplo I: adivinar el número
+# ----------------------------------------------------------------------------
+# Autor: Juan Ocaña Valenzuela
+# GitHub: patchispatch
+# Este documento está regulado por la licencia GNU General Public License v3.0
+# ----------------------------------------------------------------------------
 
-# Módulo de números aleatorios:
+# Este ejemplo consistirá en programar un juego de adivinar el número.
+# El programa se presentará, "pensará" un número en un intervalo, y el jugador
+# intentará adivinarlo, mientras el programa proporciona información sobre si 
+# la entrada es demasiado grande o pequeña.
+
+# ----------------------------------------------------------------------------
+
+# Para empezar, debemos importar el módulo que nos permite generar números 
+# aleatorios:
 import random
 
 # # Primero, el programa "pensará" un número entero entre 0 y 99:
 # number = random.randint(0, 99)
 
 # # Después, el bot se presentará:
-# print("¡Hola, soy Paco! He pensado un número entre 0 y 99; ¿serás capaz de adivinarlo?")
+# print("He pensado un número entre 0 y 99; ¿serás capaz de adivinarlo?")
 
 # El juego consistirá en un bucle infinito, en el cual el usuario introducirá 
 # un número, y el bot responderá si es mayor, menor, o igual al que pensó.
 # En este último caso, el juego finalizará.
 
-# Sin funciones:
+# # Sin funciones:
 
 # while True:
 #     n = input("Introduce un número entre 0 y 99: ")
@@ -37,10 +52,10 @@ import random
 #     else:
 #         print("¡Demasiado grande!")
 
-# Con funciones:
+# Este ejemplo, que se halla comentado, es una forma de realizar el juego.
+# Sin embargo, vamos a proceder a realizarlo con funciones:
 
 # Variables globales para todo el script:
-# Nota: las variables globales se declaran así:
 inicio = 0
 fin = 99
 
@@ -51,7 +66,8 @@ fin = 99
 # adivinar:
 def inicio_juego():
 
-    # Indicamos a Python que vamos a utilizar variables globales:
+    # Indicamos a Python que vamos a utilizar las variables del script,
+    # y no unas locales a la función:
     global inicio
     global fin
 
@@ -114,7 +130,8 @@ while not adivinado:
         print("¡Has ganado!")
         adivinado = True
 
-
+# ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 
 
 

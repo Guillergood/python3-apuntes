@@ -1,4 +1,17 @@
-# Cosas con cadenas.
+# ----------------------------------------------------------------------------
+# PYTHON 3 - APUNTES Y EJEMPLOS
+# Cadenas 
+# ----------------------------------------------------------------------------
+# Autor: Juan Ocaña Valenzuela
+# GitHub: patchispatch
+# Este documento está regulado por la licencia GNU General Public License v3.0
+# ----------------------------------------------------------------------------
+
+# Veremos cómo funcionan las cadenas, y algunos métodos útiles para 
+# operaciones con las mismas. También veremos una sintaxis diferente para 
+# darles formato.
+
+# ----------------------------------------------------------------------------
 
 # En Python, las cadenas son objetos INMUTABLES.
 # Una cadena de caracteres no se modificará jamás.
@@ -56,8 +69,8 @@ print("La cadena contiene la letra A {} veces.\n".format(cad.count("a")))
 # ----------------------------------------------------------------------------
 # Reemplazo:
 # Sí, también nos permite reemplazar caracteres:
-
-print("Cadena nueva: {1}. \nCadena antigua:: {0}".format(cad, cad.replace("a", "Z")))
+newcad = cad.replace("a", "Z")
+print("Cadena nueva: {1}. \n Cadena antigua:: {0}".format(cad, newcad))
 
 # ----------------------------------------------------------------------------
 # Tipos de caracteres:
