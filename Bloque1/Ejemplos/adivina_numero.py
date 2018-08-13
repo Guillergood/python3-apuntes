@@ -1,6 +1,6 @@
 # ----------------------------------------------------------------------------
 # PYTHON 3 - APUNTES Y EJEMPLOS
-# Ejemplo I: adivinar el número
+# Ejemplo: adivinar el número
 # ----------------------------------------------------------------------------
 # Autor: Juan Ocaña Valenzuela
 # GitHub: patchispatch
