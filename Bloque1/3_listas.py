@@ -95,4 +95,21 @@ lista.insert(2, "f")
 lista.extend(sub_lista)
 
 # ----------------------------------------------------------------------------
+# Iteración sobre una lista.
+
+# Saber manipular listas es esencial, y no necesitamos índices para ello.
+# Tomamos esta lista como ejemplo:
+l = list("abc")
+
+# Para iterar sobre la lista:
+for letra in l:
+    print(letra)
+
+# La variable letra va a contener directamente cada elemento de la lista hasta
+# llegar al final. Por tanto, no conocemos la posición del elemento en la 
+# lista. Si quisiésemos saberlo:
+for num, letra in enumerate(l):
+    print("Número: {}, letra: {}".format(num, letra))
+
+# ----------------------------------------------------------------------------
 # Continuará...
