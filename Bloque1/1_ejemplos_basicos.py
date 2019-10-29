@@ -194,6 +194,13 @@ print("Muy bien, te sabes lo números.")
 # while True es un bucle infinito, ya que la condición siempre es cierta.
 # Para salir de él, se utiliza la palabra reservada break.
 
+# Inicializacion de arrays:
+array = [1, "ola k ase", false]
+
+# foreach de Python, donde imprimirá los valores del array.
+for val in array:
+    print(val)
+
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
 
